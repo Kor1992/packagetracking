@@ -101,6 +101,7 @@ func main() {
 	db, err := sql.Open("sqlite", "tracker.db")
 	store := NewParcelStore(db)
 	service := NewParcelService(store)
+	defer db.Close()
 
 	// регистрация посылки
 	client := 1

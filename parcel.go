@@ -36,7 +36,7 @@ func (s ParcelStore) Get(number int) (Parcel, error) {
 	)
 
 	if err != nil {
-		return p, err
+		return Parcel{}, err
 	}
 	return p, nil
 }
