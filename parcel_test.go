@@ -25,7 +25,7 @@ func getTestParcel() Parcel {
 		Client:    1000,
 		Status:    ParcelStatusRegistered,
 		Address:   "test",
-		CreatedAt: time.Now().UTC().Format(time.RFC3339),
+		CreatedAt: time.Now().UTC().Format("2006-01-02 15:04:05"),
 	}
 }
 
